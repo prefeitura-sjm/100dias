@@ -1,0 +1,23 @@
+@import "_reset";
+@import "_header";
+@import "_timeline";
+@import "_responsive";
+.title{
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+  padding-top: 100px;
+}
+.title:after{
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+  border-bottom: 3px solid #333;
+}
+.is-active{
+  display: block !important;
+}

@@ -1,0 +1,28 @@
+@media (max-width: 800px) {
+  nav > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: all .2s;
+    background-color: #333;
+  }
+  nav > ul > li{
+    padding: 20px;
+  }
+  nav > ul > li > a:hover{
+    border: 0;
+  }
+  .nav-toggle{
+    display: block;
+  }
+  header{
+    background-size: cover;
+    height: 100vh;
+  }
+  header > .logo{
+    width: 400px;
+    height: 150px;
+  }
+}

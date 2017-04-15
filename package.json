@@ -1,0 +1,22 @@
+{
+  "name": "100dias",
+  "version": "1.0.0",
+  "description": "Hotsite de 100 dias da Prefeitura Municipal de São João de Meriti",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "100",
+    "dias",
+    "SJM",
+    "Meriti"
+  ],
+  "author": "Igor Felipe, Allan Santos, Rubens Jr",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ftp-deploy": "^0.1.10"
+  }
+}
