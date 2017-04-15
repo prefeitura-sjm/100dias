@@ -9,6 +9,7 @@ html * {
 }
 body{
   background-color: #ddd;
+  font-family: "Open Sans", sans-serif;
 }
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
@@ -16,7 +17,6 @@ body{
   box-sizing: border-box;
 }
 h1, h2 {
-  font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
 
@@ -43,7 +43,11 @@ Modules - reusable parts of our design
 Main components
 
 -------------------------------- */
-
+.foto-acont {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
 #cd-timeline {
   position: relative;
   padding: 2em 0;
