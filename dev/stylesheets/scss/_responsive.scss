@@ -43,11 +43,11 @@
     order: 2;
     padding-top: 20px;
   }
-  .flex-section-title{
+  .flex-section-title, .title{
     font-size: 2em;
     line-height: 1.2;
   }
-  .title-left, .title-right{
+  .title-left, .title-right, .title:after{
     margin: 0;
     border: 0;
     text-align: center;

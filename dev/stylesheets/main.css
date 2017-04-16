@@ -167,6 +167,22 @@ header > .logo {
   color: #7090CA;
   font-size: 1.5em; }
 
+.title {
+  text-align: center;
+  font-size: 3em;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 1px #333;
+  padding-top: 100px; }
+
+.title:after {
+  content: '';
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: 30px;
+  border-bottom: 3px solid #333; }
+
 /* --------------------------------
 
 Primary style
@@ -584,11 +600,11 @@ Main components
     order: 2;
     padding-top: 20px; }
 
-  .flex-section-title, .title-left, .title-right {
+  .flex-section-title, .title-left, .title-right, .title {
     font-size: 2em;
     line-height: 1.2; }
 
-  .title-left, .title-right {
+  .title-left, .title-right, .title:after {
     margin: 0;
     border: 0;
     text-align: center; }
@@ -599,22 +615,6 @@ Main components
   .cd-date {
     font-weight: bold;
     font-size: 1.5em !important; } }
-.title {
-  text-align: center;
-  font-size: 3em;
-  text-transform: uppercase;
-  color: white;
-  text-shadow: 1px 1px 1px #333;
-  padding-top: 100px; }
-
-.title:after {
-  content: '';
-  display: block;
-  margin: 0 auto;
-  width: 200px;
-  height: 30px;
-  border-bottom: 3px solid #333; }
-
 .is-active {
   display: block !important; }
 
