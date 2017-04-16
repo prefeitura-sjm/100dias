@@ -282,42 +282,50 @@
       </div>
     </div>
   </section>
-  <section class="flex-section counter-wrapper" id="intervencoes">
-    <h1 class="title wow fadeIn">INTERVENÇÕES PELA CIDADE</h1>
+  <section class="flex-section counter-wrapper parallax-window" data-parallax="scroll" data-image-src="images/topo.jpg" id="intervencoes">
+    <h1 class="title wow fadeIn" style="color: white;">INTERVENÇÕES PELA CIDADE</h1>
     <div class="flex-section-row wow fadeIn">
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="200">0</p>
-        <p class="odometer-description">Escolas Re-abertas</p>
+        <p class="odometer-description">Coleta de Lixo Domiciliar</p>
+        <p class="odometer" data-value="35000">0</p>
+        <p class="odometer-description-simbol">T</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="10">0</p>
-        <p class="odometer-description">UPAs Re-abertas</p>
+        <p class="odometer-description">Remoção de Entulho</p>
+        <p class="odometer" data-value="37000">0</p>
+        <p class="odometer-description-simbol">M³</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="1000">0</p>
-        <p class="odometer-description">Empregos Gerados</p>
+        <p class="odometer-description">Varrição de Logradouros</p>
+        <p class="odometer" data-value="14200">0</p>
+        <p class="odometer-description-simbol">KM</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="10">0</p>
-        <p class="odometer-description">Hospitais Construidos</p>
+        <p class="odometer-description">Coleta de Pneus</p>
+        <p class="odometer" data-value="32000">0</p>
+        <p class="odometer-description-simbol">Peças</p>
       </div>
     </div>
     <div class="flex-section-row wow fadeIn">
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="200">0</p>
-        <p class="odometer-description">Escolas Re-abertas</p>
+        <p class="odometer-description">Iluminação Pública</p>
+        <p class="odometer" data-value="3350">0</p>
+        <p class="odometer-description-simbol">Pontos de Acesso</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="10">0</p>
-        <p class="odometer-description">UPAs Re-abertas</p>
+        <p class="odometer-description">Dragagem de Canais</p>
+        <p class="odometer" data-value="5100">0</p>
+        <p class="odometer-description-simbol">M</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="1000">0</p>
-        <p class="odometer-description">Empregos Gerados</p>
+        <p class="odometer-description">Operação Tapa Buracos</p>
+        <p class="odometer" data-value="1390">0</p>
+        <p class="odometer-description-simbol">T de Asfalto</p>
       </div>
       <div class="flex-section-item transparent">
-        <p class="odometer" data-value="10">0</p>
-        <p class="odometer-description">Hospitais Construidos</p>
+        <p class="odometer-description">Limpeza de Desobstrução</p>
+        <p class="odometer" data-value="535">0</p>
+        <p class="odometer-description-simbol">Cxs de Passagem</p>
       </div>
     </div>
   </section>
@@ -325,6 +333,7 @@
   <script src="scripts/scripts.min.js"></script>
   <script type="text/javascript">
     new WOW().init();
+    $('.parallax-window').parallax({imageSrc: 'images/topo.jpg'});
   </script>
 </body>
 </html>

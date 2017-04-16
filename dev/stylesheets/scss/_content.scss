@@ -15,7 +15,6 @@
   display: block;
   margin: 0 auto;
   color: #333;
-  text-shadow: 1px 1px 1px #fff;
 }
 .flex-section > .title:after{
   border-bottom-color: $secondary-blue;
@@ -101,15 +100,27 @@
   height: 30px;
   border-bottom: 3px solid #333;
 }
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
 .odometer-digit{
   font-size: 4em;
   font-weight: bold;
-  color: $secondary-blue;
+  color: white;
 }
 .odometer-inside{
   margin: 0 auto;
 }
 .odometer-description{
   padding-top: 10px;
+  padding-bottom: 10px;
   text-align: center;
+}
+.odometer-description-simbol{
+@extend .odometer-description;
+font-weight: bold;
+color: #333;
+font-size: 2.5em;
+text-shadow: 1px 1px 1px #fff;
 }
