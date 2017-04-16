@@ -287,9 +287,9 @@ Main components
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
-    font-size: 16px;
-    font-size: 1rem;
+    top: -12px;
+    font-size: 2rem;
+    font-weight: bold;
   }
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;

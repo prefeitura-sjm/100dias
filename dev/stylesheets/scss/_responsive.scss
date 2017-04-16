@@ -45,10 +45,18 @@
   }
   .flex-section-title{
     font-size: 2em;
+    line-height: 1.2;
   }
   .title-left, .title-right{
     margin: 0;
     border: 0;
     text-align: center;
+  }
+  .flex-section-text > p > span{
+    font-size: 1.2em;
+  }
+  .cd-date{
+    font-weight: bold;
+    font-size: 1.5em !important;
   }
 }

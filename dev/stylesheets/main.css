@@ -165,7 +165,7 @@ header > .logo {
 .flex-section-text > p > span {
   font-weight: bold;
   color: #7090CA;
-  font-size: 2em; }
+  font-size: 1.5em; }
 
 /* --------------------------------
 
@@ -425,9 +425,9 @@ Main components
     position: absolute;
     width: 100%;
     left: 122%;
-    top: 6px;
-    font-size: 16px;
-    font-size: 1rem; }
+    top: -12px;
+    font-size: 2rem;
+    font-weight: bold; }
 
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right; }
@@ -585,12 +585,20 @@ Main components
     padding-top: 20px; }
 
   .flex-section-title, .title-left, .title-right {
-    font-size: 2em; }
+    font-size: 2em;
+    line-height: 1.2; }
 
   .title-left, .title-right {
     margin: 0;
     border: 0;
-    text-align: center; } }
+    text-align: center; }
+
+  .flex-section-text > p > span {
+    font-size: 1.2em; }
+
+  .cd-date {
+    font-weight: bold;
+    font-size: 1.5em !important; } }
 .title {
   text-align: center;
   font-size: 3em;
