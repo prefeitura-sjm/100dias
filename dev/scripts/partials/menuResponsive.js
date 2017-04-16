@@ -1,4 +1,3 @@
-new WOW().init();
 function openMenu(){
   var menu = document.querySelector('.menu');
 

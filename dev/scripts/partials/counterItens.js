@@ -1,4 +1,3 @@
-
 $(function() {
     var oTop = $('.counter-wrapper').offset().top - window.innerHeight;
     $(window).scroll(function(){

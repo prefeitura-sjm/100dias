@@ -21,18 +21,45 @@ module.exports = (grunt) => {
           exclusions: ['dev/stylesheets/scss/*']
         }
       },
+      cssmin: {
+        options: {
+          mergeIntoShorthands: false,
+          roundingPrecision: -1
+        },
+        target: {
+          files: {
+            'dev/stylesheets/main.min.css': ['dev/stylesheets/main.css']
+          }
+        }
+      },
+      uglify: {
+        my_target: {
+          files: {
+            'dev/scripts/scripts.min.js': ['dev/scripts/partials/*.js', 'dev/scripts/libs/*.js']
+          }
+        }
+      },
       watch: {
-        scripts: {
+        css: {
           files: ['**/*.scss'],
-          tasks: ['sass'],
+          tasks: ['sass', 'cssmin'],
           options: {
             spawn: false,
           },
         },
+        scripts: {
+          files: ['dev/scripts/partials/*.js','dev/scripts/libs/*.js'],
+          tasks: ['uglify'],
+          options: {
+            spawn: false,
+          },
+        }
       }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-ftp-deploy');
 

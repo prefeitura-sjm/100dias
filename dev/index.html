@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>100 Dias de Trabalho - Prefeitura Municipal de São João de Meriti</title>
-  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/main.min.css">
   <link rel="stylesheet" href="stylesheets/animate.css">
   <link rel="stylesheet" href="stylesheets/odometer.css">
 </head>
 <body>
   <nav>
-    <h1 class="logo wow slideInLeft"></h1>
+    <a href="#home" class="logo wow slideInLeft anchor"></a>
     <ul class="menu wow slideInRight">
-      <li><a href="#">Section 1</a></li>
-      <li><a href="#">Section 2</a></li>
-      <li><a href="#">Section 3</a></li>
+      <li><a class="anchor" href="#mensagem">Mensagem</a></li>
+      <li><a class="anchor" href="#posto">Reinauguração</a></li>
+      <li><a class="anchor" href="#timeline">O que foi feito</a></li>
+      <li><a class="anchor" href="#melhorias">+ Melhorias</a></li>
+      <li><a class="anchor" href="#intervencoes">Intervenções</a></li>
     </ul>
     <span class="nav-toggle wow slideInRight" onclick="openMenu()">
         <span></span>
@@ -23,10 +25,10 @@
         <span></span>
     </span>
   </nav>
-  <header>
+  <header id="home">
     <h1 class="logo wow fadeIn"></h1>
   </header>
-  <section class="flex-section itens-center">
+  <section class="flex-section itens-center" id="mensagem">
     <div class="flex-section-text">
     <h1 class="flex-section-title title-left">MENSAGEM AO POVO DE <br>SÃO JOÃO</h1>
     <br>
@@ -46,7 +48,7 @@
     </div>
     <img src="images/prefeito2.png" alt="Prefeito Dr. João" class="flex-section-image">
   </section>
-  <section class="flex-section itens-center">
+  <section class="flex-section itens-center" id="posto">
     <img src="images/posto.png" alt="Posto de Saúde da Vila São João" class="flex-section-image">
     <div class="flex-section-text">
     <h1 class="flex-section-title title-right">Prefeitura reinaugura posto com atendimento ampliado até às 21h</h1>
@@ -65,7 +67,7 @@
       </p>
     </div>
   </section>
-  <h1 class="title">O que foi feito</h1>
+  <h1 class="title" id="timeline">O que foi feito</h1>
 	<section id="cd-timeline" class="cd-container">
 		<div class="cd-timeline-block">
 			<div class="cd-timeline-img cd-pref">
@@ -217,7 +219,7 @@
 			</div> <!-- cd-timeline-content -->
 		</div> <!-- cd-timeline-block -->
 	</section> <!-- cd-timeline -->
-  <section class="flex-section">
+  <section class="flex-section" id="melhorias">
     <h1 class="title">+ MELHORIAS</h1>
     <div class="flex-section-row">
       <div class="flex-section-item">
@@ -272,7 +274,7 @@
       </div>
     </div>
   </section>
-  <section class="flex-section counter-wrapper">
+  <section class="flex-section counter-wrapper" id="intervencoes">
     <h1 class="title wow fadeIn">INTERVENÇÕES PELA CIDADE</h1>
     <div class="flex-section-row wow fadeIn">
       <div class="flex-section-item transparent">
@@ -311,12 +313,13 @@
       </div>
     </div>
   </section>
-  <script src="scripts/jquery.js"></script>
-  <script src="scripts/modernizr.js"></script>
-  <script src="scripts/wow.min.js"></script>
-  <script src="scripts/odometer.min.js"></script>
-  <script src="scripts/main.js"></script>
-  <script src="scripts/counterItens.js"></script>
-  <script src="scripts/menuResponsive.js"></script>
+  <script src="scripts/libs/jquery.js"></script>
+  <script src="scripts/libs/wow.min.js"></script>
+  <script src="scripts/libs/odometer.min.js"></script>
+  <script src="scripts/libs/modernizr.js"></script>
+  <script src="scripts/scripts.min.js"></script>
+  <script type="text/javascript">
+    new WOW().init();
+  </script>
 </body>
 </html>

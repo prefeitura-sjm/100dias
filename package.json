@@ -15,7 +15,9 @@
   "author": "Igor Felipe, Allan Santos, Rubens Jr",
   "license": "ISC",
   "devDependencies": {
+    "grunt-contrib-cssmin": "^2.0.0",
     "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-ftp-deploy": "^0.1.10"
   }
