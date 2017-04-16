@@ -139,9 +139,57 @@ header > .logo {
   width: 100%;
   min-height: 100vh;
   height: auto;
+  flex-direction: column;
   background-color: white;
+  align-items: flex-start; }
+
+.itens-center {
+  align-items: center;
+  flex-direction: row; }
+
+.flex-section > .title {
+  display: block;
+  margin: 0 auto;
+  color: #333;
+  text-shadow: 1px 1px 1px #fff; }
+
+.flex-section > .title:after {
+  border-bottom-color: #7090CA; }
+
+.flex-section-row {
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-self: center;
   flex-direction: row;
-  align-items: center; }
+  align-content: center;
+  padding-top: 10px; }
+
+.flex-section-item {
+  box-sizing: border-box;
+  flex-basis: 1;
+  width: 25%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin: 10px; }
+
+.flex-section-item.transparent {
+  background-color: transparent; }
+
+.flex-section-item > img, .flex-section-description {
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
+
+.flex-section-item > img {
+  border: 1px solid #eee; }
+
+.flex-section-description > p {
+  padding-top: 20px;
+  line-height: 1.5; }
 
 .flex-section-text, .flex-section-image {
   margin: 0px 50px 0px 50px; }
@@ -182,6 +230,18 @@ header > .logo {
   width: 200px;
   height: 30px;
   border-bottom: 3px solid #333; }
+
+.odometer-digit {
+  font-size: 4em;
+  font-weight: bold;
+  color: #7090CA; }
+
+.odometer-inside {
+  margin: 0 auto; }
+
+.odometer-description {
+  padding-top: 10px;
+  text-align: center; }
 
 /* --------------------------------
 
@@ -555,33 +615,7 @@ Main components
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0); } }
-@media (max-width: 800px) {
-  nav > ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    transition: all .2s;
-    background-color: #333; }
-
-  nav > ul > li {
-    padding: 20px; }
-
-  nav > ul > li > a:hover {
-    border: 0; }
-
-  .nav-toggle {
-    display: block; }
-
-  header {
-    background-size: cover;
-    height: 100vh; }
-
-  header > .logo {
-    width: 350px;
-    height: 150px; }
-
+@media (max-width: 1024px) {
   .flex-section {
     flex-direction: column;
     justify-content: center;
@@ -614,7 +648,48 @@ Main components
 
   .cd-date {
     font-weight: bold;
-    font-size: 1.5em !important; } }
+    font-size: 1.5em !important; }
+
+  .flex-section-row {
+    flex-wrap: wrap; }
+
+  .flex-section-item {
+    box-sizing: border-box;
+    width: -webkit-calc(100% - 52% - 10px);
+    margin: 10px 10px 10px 10px; } }
+@media (max-width: 800px) {
+  nav > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: all .2s;
+    background-color: #333; }
+
+  nav > ul > li {
+    padding: 20px; }
+
+  nav > ul > li > a:hover {
+    border: 0; }
+
+  .nav-toggle {
+    display: block; }
+
+  header {
+    background-size: cover;
+    height: 100vh; }
+
+  header > .logo {
+    width: 350px;
+    height: 150px; }
+
+  .flex-section-row {
+    flex-direction: column; }
+
+  .flex-section-item {
+    width: 100%;
+    margin: 10px 0 10px 0; } }
 .is-active {
   display: block !important; }
 

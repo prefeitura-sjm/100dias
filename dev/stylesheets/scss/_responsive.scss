@@ -1,30 +1,4 @@
-@media (max-width: 800px) {
-  nav > ul {
-    display: none;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 100%;
-    transition: all .2s;
-    background-color: #333;
-  }
-  nav > ul > li{
-    padding: 20px;
-  }
-  nav > ul > li > a:hover{
-    border: 0;
-  }
-  .nav-toggle{
-    display: block;
-  }
-  header{
-    background-size: cover;
-    height: 100vh;
-  }
-  header > .logo{
-    width: 350px;
-    height: 150px;
-  }
+@media (max-width: 1024px) {
   .flex-section{
     flex-direction: column;
     justify-content: center;
@@ -58,5 +32,48 @@
   .cd-date{
     font-weight: bold;
     font-size: 1.5em !important;
+  }
+  .flex-section-row{
+    flex-wrap: wrap;
+  }
+  .flex-section-item{
+    box-sizing: border-box;
+    width: -webkit-calc(100% - 52% - 10px);
+    margin: 10px 10px 10px 10px;
+  }
+}
+@media (max-width: 800px){
+  nav > ul {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    transition: all .2s;
+    background-color: #333;
+  }
+  nav > ul > li{
+    padding: 20px;
+  }
+  nav > ul > li > a:hover{
+    border: 0;
+  }
+  .nav-toggle{
+    display: block;
+  }
+  header{
+    background-size: cover;
+    height: 100vh;
+  }
+  header > .logo{
+    width: 350px;
+    height: 150px;
+  }
+  .flex-section-row{
+    flex-direction: column;
+  }
+  .flex-section-item{
+    width: 100%;
+    margin: 10px 0 10px 0;
   }
 }

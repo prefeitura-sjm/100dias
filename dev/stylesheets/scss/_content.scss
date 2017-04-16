@@ -3,9 +3,57 @@
   width: 100%;
   min-height: 100vh;
   height: auto;
+  flex-direction: column;
   background-color: white;
-  flex-direction: row;
+  align-items: flex-start;
+}
+.itens-center{
   align-items: center;
+  flex-direction: row;
+}
+.flex-section > .title{
+  display: block;
+  margin: 0 auto;
+  color: #333;
+  text-shadow: 1px 1px 1px #fff;
+}
+.flex-section > .title:after{
+  border-bottom-color: $secondary-blue;
+}
+.flex-section-row{
+  width: 95%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+  align-content: center;
+  padding-top: 10px;
+}
+.flex-section-item{
+  box-sizing: border-box;
+  flex-basis: 1;
+  width: 25%;
+  height: auto;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+  background-color: #ddd;
+  margin: 10px;
+}
+.flex-section-item.transparent{
+  background-color: transparent;
+}
+.flex-section-item > img, .flex-section-description{
+  width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.flex-section-item > img{
+  border: 1px solid #eee;
+}
+.flex-section-description > p{
+  padding-top: 20px;
+  line-height: 1.5;
 }
 .flex-section-text, .flex-section-image{
   margin:  0px 50px 0px 50px;
@@ -48,4 +96,16 @@
   width: 200px;
   height: 30px;
   border-bottom: 3px solid #333;
+}
+.odometer-digit{
+  font-size: 4em;
+  font-weight: bold;
+  color: $secondary-blue;
+}
+.odometer-inside{
+  margin: 0 auto;
+}
+.odometer-description{
+  padding-top: 10px;
+  text-align: center;
 }
