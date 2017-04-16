@@ -124,7 +124,7 @@ header {
   justify-content: center;
   align-items: center;
   background-image: url("../images/topo.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -177,6 +177,10 @@ header > .logo {
   border-radius: 5px;
   background-color: #ddd;
   margin: 10px; }
+
+.flex-section-item-half {
+  width: 50%;
+  height: auto; }
 
 .flex-section-item.transparent {
   background-color: transparent; }

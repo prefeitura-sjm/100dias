@@ -6,6 +6,9 @@ $(function() {
         console.log( pTop + ' - ' + oTop );   //just for your debugging
         if( pTop > oTop ){
             counterItensFun();
+            data.setValue(0, 1, 50);
+            data.setValue(1, 1, 800);
+            drawChart();
         }
     });
 });
