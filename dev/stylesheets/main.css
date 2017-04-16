@@ -704,7 +704,7 @@ Main components
   .flex-section-row {
     flex-direction: column; }
 
-  .flex-section-item {
+  .flex-section-item, .flex-section-item-half {
     width: 100%;
     margin: 10px 0 10px 0; } }
 .is-active {
