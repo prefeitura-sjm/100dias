@@ -9,16 +9,43 @@ module.exports = (grunt) => {
           }
         }
       },
+      imagemin: {                          // Task
+         dynamic: {                         // Another target
+           files: [{
+             expand: true,                  // Enable dynamic expansion
+             cwd: 'dev/',                   // Src matches are relative to this path
+             src: ['images/*.{png,jpg,gif}'],   // Actual patterns to match
+             dest: 'public/'                  // Destination path prefix
+           }]
+         }
+       },
+      copy: {
+        main: {
+          expand: true,
+          src: ['scripts/scripts.min.js', 'stylesheets/main.min.css', 'stylesheets/odometer.css', 'stylesheets/animate.css', 'images/logo.svg'],
+          cwd: 'dev',
+          dest: 'public/',
+        }
+      },
+      minifyHtml: {
+    		options: {
+    			cdata: true
+    		},
+    		dist: {
+    			files: {
+    				'public/index.html': 'dev/index.html'
+    			}
+    		}
+    	},
       'ftp-deploy': {
         build: {
           auth: {
-            host: 'meriti.rj.gov.br',
+            host: 'ftp.meriti.rj.gov.br',
             port: 21,
             authKey: 'key1'
           },
-          src: 'dev',
-          dest: 'public_html/100dias',
-          exclusions: ['dev/stylesheets/scss/*']
+          src: 'public',
+          dest: '/public_html/100dias/'
         }
       },
       cssmin: {
@@ -61,8 +88,11 @@ module.exports = (grunt) => {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-minify-html');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-ftp-deploy');
 
     grunt.registerTask('development', ['watch']);
-    grunt.registerTask('production', ['ftp-deploy']);
+    grunt.registerTask('production', ['copy','minifyHtml','imagemin', 'ftp-deploy']);
 };
