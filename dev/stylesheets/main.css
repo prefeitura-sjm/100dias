@@ -238,8 +238,10 @@ header > .logo {
   border-bottom: 3px solid #333; }
 
 .parallax-window {
-  min-height: 400px;
-  background: transparent; }
+  background-image: url("../images/contador-bg.png");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .odometer-digit {
   font-size: 4em;
@@ -252,13 +254,13 @@ header > .logo {
 .odometer-description, .odometer-description-simbol {
   padding-top: 10px;
   padding-bottom: 10px;
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 .odometer-description-simbol {
   font-weight: bold;
-  color: #333;
-  font-size: 2.5em;
-  text-shadow: 1px 1px 1px #fff; }
+  font-size: 2em;
+  color: #7090CA; }
 
 /* --------------------------------
 
