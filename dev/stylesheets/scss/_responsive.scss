@@ -85,4 +85,15 @@
     background-size: cover;
     min-height: 350px;
   }
+  footer p{
+    padding: 10px 40px 10px 40px;
+    color: white;
+    text-align: center;
+  }
+}
+@media (max-width: 500px){
+  #iptu{
+    background-size: 100%;
+    min-height: 200px;
+  }
 }

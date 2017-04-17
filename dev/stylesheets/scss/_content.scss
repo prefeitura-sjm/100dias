@@ -6,6 +6,8 @@
   flex-direction: column;
   background-color: white;
   align-items: flex-start;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .itens-center{
   align-items: center;
@@ -67,6 +69,8 @@
 }
 .flex-section-subtitle{
   padding-top: 20px;
+  font-weight: bold;
+  font-size: 1.5em;
 }
 .title-left{
   @extend .flex-section-title;
@@ -83,9 +87,8 @@
   color: #333;
 }
 .flex-section-text > p > span{
-  font-weight: bold;
+  @extend .flex-section-subtitle;
   color: $secondary-blue;
-  font-size: 1.5em;
 }
 .title{
   text-align: center;
