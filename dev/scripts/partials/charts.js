@@ -6,8 +6,8 @@ google.charts.load('current', {'packages':['corechart', 'bar']});
         ['Ano', 'Atendimentos', { role: 'style' }],
         ['2016 - PAM Meriti', 50, 'red'],
         ['100 Dias de 2017 - PAM Meriti', 800, 'blue'],
-        ['2016 - PAM Éden', 50, 'red'],
-        ['100 Dias de 2017 - PAM Éden', 800, 'blue']
+        ['2016 - PAM Éden', 25, 'red'],
+        ['100 Dias de 2017 - PAM Éden', 400, 'blue']
      ]);
      var options = {'title':'Aumento da Capacidade de Atendimentos',
                     legend: { position: 'none'},

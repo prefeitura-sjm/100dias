@@ -1,0 +1,20 @@
+footer{
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333;
+}
+footer p{
+  padding: 10px 0 10px 0;
+  color: white;
+}
+footer img{
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px;
+}

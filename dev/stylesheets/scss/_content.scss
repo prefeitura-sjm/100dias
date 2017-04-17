@@ -65,6 +65,9 @@
   font-size: 3em;
   color: #333;
 }
+.flex-section-subtitle{
+  padding-top: 20px;
+}
 .title-left{
   @extend .flex-section-title;
   padding-left: 10px;
@@ -125,4 +128,21 @@
 font-weight: bold;
 font-size: 2em;
 color: $secondary-blue;
+}
+.img-block{
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+  padding: 20px 0 20px 0;
+}
+#posto{
+  background-image: url('../images/bg-destaque.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#iptu{
+  background-image: url('../images/iptu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }

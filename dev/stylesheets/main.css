@@ -126,7 +126,7 @@ header {
   background-image: url("../images/topo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: 0% 100px; }
 
 header > .logo {
   width: 600px;
@@ -204,6 +204,9 @@ header > .logo {
   font-size: 3em;
   color: #333; }
 
+.flex-section-subtitle {
+  padding-top: 20px; }
+
 .title-left {
   padding-left: 10px;
   border-left: 5px solid #2E3192; }
@@ -261,6 +264,23 @@ header > .logo {
   font-weight: bold;
   font-size: 2em;
   color: #7090CA; }
+
+.img-block {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  height: auto;
+  padding: 20px 0 20px 0; }
+
+#posto {
+  background-image: url("../images/bg-destaque.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#iptu {
+  background-image: url("../images/iptu.png");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /* --------------------------------
 
@@ -634,6 +654,26 @@ Main components
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
     transform: translateX(0); } }
+footer {
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333; }
+
+footer p {
+  padding: 10px 0 10px 0;
+  color: white; }
+
+footer img {
+  display: block;
+  margin: 0 auto;
+  width: 64px;
+  height: 64px; }
+
 @media (max-width: 1024px) {
   .flex-section {
     flex-direction: column;
@@ -657,7 +697,7 @@ Main components
     font-size: 2em;
     line-height: 1.2; }
 
-  .title-left, .title-right, .title:after {
+  .title-left, .title-right, .title:after, .flex-section-subtitle {
     margin: 0;
     border: 0;
     text-align: center; }
@@ -708,7 +748,16 @@ Main components
 
   .flex-section-item, .flex-section-item-half {
     width: 100%;
-    margin: 10px 0 10px 0; } }
+    margin: 10px 0 10px 0; }
+
+  .img-block {
+    width: 80%; }
+
+  #iptu {
+    background-color: #2E3192;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px; } }
 .is-active {
   display: block !important; }
 

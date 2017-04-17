@@ -21,7 +21,7 @@
     font-size: 2em;
     line-height: 1.2;
   }
-  .title-left, .title-right, .title:after{
+  .title-left, .title-right, .title:after, .flex-section-subtitle{
     margin: 0;
     border: 0;
     text-align: center;
@@ -75,5 +75,14 @@
   .flex-section-item, .flex-section-item-half{
     width: 100%;
     margin: 10px 0 10px 0;
+  }
+  .img-block{
+    width: 80%;
+  }
+  #iptu{
+    background-color: $primary-blue;
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
   }
 }
